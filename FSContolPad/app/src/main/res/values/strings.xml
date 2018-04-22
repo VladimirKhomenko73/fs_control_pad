@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Контроллер тренажера</string>
+    <string name="settings">Настройки</string>
+
+    <string name="connect">Переподключиться</string>
+    <string name="fly_command">Полет</string>
+    <string name="pause_command">Пауза</string>
+    <string name="stop_command">Стоп</string>
+    <string name="off_command">Выкл</string>
+
+    <string name="connection_cat">Подключение</string>
+    <string name="server_ip">IP сервера</string>
+    <string name="server_port">Порт сервера</string>
+
+    <string name="packet_cat">Содержание пакета</string>
+    <string name="source_name">Имя отправителя</string>
+    <string name="dest_name">Имя получателя</string>
+
+    <string name="network_cat">Сеть</string>
+    <string name="device_ip">IP устройства</string>
+    <string name="device_port">Порт устройства</string>
+
+    <string name="environment">Среда</string>
+    <string name="light">Свет</string>
+    <string name="fog">Туман</string>
+    <string name="volume">Громкость</string>
+    <string name="test">Тест соединения</string>
+
+</resources>

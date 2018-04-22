@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/connection_cat">
+        <EditTextPreference
+            android:title="@string/server_ip"
+            android:key="pref_key_server_ip"
+            android:defaultValue="192.168.1.113"/>
+        <EditTextPreference
+            android:title="@string/server_port"
+            android:key="pref_key_server_port"
+            android:defaultValue="9842"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/packet_cat">
+        <EditTextPreference
+            android:title="@string/dest_name"
+            android:key="pref_key_dest_name"
+            android:defaultValue="VIT"/>
+        <EditTextPreference
+            android:title="@string/source_name"
+            android:key="pref_key_source_name"
+            android:defaultValue="CTLPNL"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/network_cat">
+        <Preference
+            android:title="@string/device_ip"
+            android:key="pref_key_device_ip"/>
+        <EditTextPreference
+            android:key="pref_key_device_port"
+            android:title="@string/device_port"
+            android:defaultValue="9842"
+            android:summary="9842"/>
+    </PreferenceCategory>
+</PreferenceScreen>

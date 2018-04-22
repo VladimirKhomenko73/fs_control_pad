@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:paddingBottom="8dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp">
+
+            <Button
+                android:id="@+id/fly_command"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_selector"
+                android:text="@string/fly_command"
+                android:textColor="@color/textIconColor"/>
+
+            <Button
+                android:id="@+id/pause_command"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_selector"
+                android:text="@string/pause_command"
+                android:textColor="@color/textIconColor"/>
+
+            <Button
+                android:id="@+id/stop_command"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_selector"
+                android:text="@string/stop_command"
+                android:textColor="@color/textIconColor"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="4dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/environment"
+                    android:textColor="@android:color/black"/>
+
+                <Button
+                    android:id="@+id/light_command"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:background="@drawable/button_selector"
+                    android:text="@string/light"
+                    android:textColor="@color/textIconColor"/>
+
+                <Button
+                    android:id="@+id/fog_command"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:background="@drawable/button_selector"
+                    android:text="@string/fog"
+                    android:textColor="@color/textIconColor"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/border"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/volume"
+                    android:textColor="@android:color/black"/>
+
+                <ImageButton
+                    android:id="@+id/volup_command"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="4dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_selector"
+                    android:src="@android:drawable/arrow_up_float"
+                    android:text="@string/light"
+                    android:textColor="@color/textIconColor"/>
+
+                <ImageButton
+                    android:id="@+id/voldwn_command"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="4dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_selector"
+                    android:src="@android:drawable/arrow_down_float"
+                    android:text="@string/fog"
+                    android:textColor="@color/textIconColor"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:baselineAligned="false"
+            android:orientation="horizontal">
+        <Button
+            android:id="@+id/test_command"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:background="@drawable/button_selector"
+            android:text="@string/test"
+            android:textColor="@color/textIconColor"/>
+
+        <Button
+            android:id="@+id/off_command"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_selector"
+            android:text="@string/off_command"
+            android:textColor="@color/textIconColor"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_margin="16dp"
+        android:layout_weight="1"
+        android:background="@android:color/white"
+        android:scrollbars="vertical">
+
+        <TextView
+            android:id="@+id/log"
+            style="?android:textViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="8dp"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"/>
+    </ScrollView>
+</LinearLayout>
